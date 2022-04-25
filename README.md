@@ -1,0 +1,23 @@
+# OVX 🍊
+<u>O</u>rangii <u>V</u>ue E<u>x</u>ample
+一个可以帮助生成Vue模板的Cli工具
+
+## 介绍
+生成基于[`vitejs`](https://vitejs.dev)的Vue模板
+
+当前模板有：
+- Vue-ts + vue-router + Element Plus + Element Icon + 组件、方法自动导入
+
+_更多模板添加中_
+
+## 使用
+### npx
+```shell
+npx ovx@latest
+```
+
+### npm global
+```shell
+npm i ovx -g
+ovx
+```

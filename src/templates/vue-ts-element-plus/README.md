@@ -1,6 +1,19 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 + TypeScript + Element Plus + vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+
+## All Docuements
+- [Vue 3](https://vuejs.org/)
+- [vue-router](https://router.vuejs.org/)
+- [Element Plus](https://element-plus.gitee.io/)
+---
+Note: use Element Plus icon by `<el-icon><ep-orange /></el-icon>` instead of `<el-icon><orange /></el-icon>` because we are using @iconify/ep for auto icon importing.
+
+Auto-importations:
+- [unplug-auto-import](https://github.com/antfu/unplugin-auto-import)
+- [unplugin-icons](https://github.com/antfu/unplugin-icons)
+- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
+
 
 ## Recommended IDE Setup
 
