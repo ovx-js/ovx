@@ -1,5 +1,6 @@
 .github
 node_modules
-src
+/src
+!/dist/templates/**/src
 .eslintrc.js
 tsconfig.json
