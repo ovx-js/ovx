@@ -1,0 +1,1 @@
+{"version":3,"file":"template-list.js","sourceRoot":"","sources":["../src/template-list.ts"],"names":[],"mappings":";;;AAIa,QAAA,SAAS,GAAiB;IACrC,qDAAqD,EAAE,qBAAqB;CAC7E,CAAC;AAEW,QAAA,YAAY,GAAG,MAAM,CAAC,IAAI,CAAC,iBAAS,CAAC,CAAC;AAC5C,MAAM,eAAe,GAAG,CAAC,YAAoB,EAAE,EAAE,CAAC,iBAAS,CAAC,YAAY,CAAC,CAAC;AAApE,QAAA,eAAe,mBAAqD"}

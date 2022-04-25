@@ -1,0 +1,35 @@
+{
+  "name": "ovx",
+  "version": "1.0.0",
+  "description": "Orangii's Vue Example, used to quickly generate a template with vus-ts + vue-router + Element Plus with auto importation.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "ts-node src/index.ts",
+    "build": "tsc && shx rm -rf dist/templates && shx cp -r src/templates dist"
+  },
+  "bin": {
+    "ovx": "./dist/index.js"
+  },
+  "keywords": [
+    "Vue",
+    "Template",
+    "ElementPlus"
+  ],
+  "author": "Orangii|橙梓",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/ejs": "^3.1.0",
+    "@types/inquirer": "^8.2.1",
+    "@types/node": "^17.0.26",
+    "@types/shelljs": "^0.8.11",
+    "nodemon": "^2.0.15",
+    "shelljs": "^0.8.5",
+    "shx": "^0.3.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "inquirer": "^8.2.2"
+  }
+}
