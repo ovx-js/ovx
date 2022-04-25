@@ -66,6 +66,7 @@ function postProcess(options) {
                 default: false,
             }]).then(answers => {
             if (answers['install']) {
+                console.log(chalk_1.default.green('Installing dependencies...'));
                 shelljs.cd(options.targetPath);
                 const result = shelljs.exec('npm install');
                 if (result.code !== 0) {
