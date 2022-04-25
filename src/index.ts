@@ -72,6 +72,7 @@ function postProcess (options: CliOptions) {
 }
 
 const SKIP_FILES = ['node_modules', '.git', '.DS_Store', '.template.json'];
+const textFileExtension = /.*\.([jt]sx|[jt]s|json|vue|gitignore|html|md|txt)$/;
 function createDirectoryContents(templatePath: string, projectName: string) {
   const filesToCreate = fs.readdirSync(templatePath);
   filesToCreate.forEach(file => {
@@ -79,10 +80,16 @@ function createDirectoryContents(templatePath: string, projectName: string) {
     const stats = fs.statSync(originFilePath);
     if(SKIP_FILES.indexOf(file) > -1) return;
     if (stats.isFile()) {
-      let contents = fs.readFileSync(originFilePath, 'utf8');
-      contents = template.render(contents, { projectName });
-      const writePath = path.join(CURR_DIR, projectName, file);
-      fs.writeFileSync(writePath, contents, 'utf8');
+      if (textFileExtension.test(file)) {
+        let contents = fs.readFileSync(originFilePath, 'utf8');
+        contents = template.render(contents, { projectName });
+        const writePath = path.join(CURR_DIR, projectName, file);
+        fs.writeFileSync(writePath, contents, 'utf8');
+      } else {
+        let contents = fs.readFileSync(originFilePath);
+        const writePath = path.join(CURR_DIR, projectName, file);
+        fs.writeFileSync(writePath, contents);
+      }
     } else if (stats.isDirectory()) {
       fs.mkdirSync(path.join(CURR_DIR, projectName, file));
       createDirectoryContents(
