@@ -15,6 +15,6 @@ updates:
   - package-ecosystem: "npm"
     directory: "/src/templates/vue-ts-element-plus"
     schedule:
-      interva: "daily"
+      interval: "daily"
     reviewers:
       - "Jiaocz"
