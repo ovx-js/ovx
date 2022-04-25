@@ -81,8 +81,8 @@ function postProcess(options) {
             else {
                 console.log(chalk_1.default.green('Done. Now run:'));
                 console.log(`  cd ${options.projectName}`);
-                console.log(`  npm install`);
-                console.log(`  npm run dev`);
+                console.log('  npm install');
+                console.log('  npm run dev');
                 console.log(chalk_1.default.gray.italic('yarn also works.'));
                 return true;
             }
@@ -108,7 +108,7 @@ function createDirectoryContents(templatePath, projectName) {
                 fs.writeFileSync(writePath, contents, 'utf8');
             }
             else {
-                let contents = fs.readFileSync(originFilePath);
+                const contents = fs.readFileSync(originFilePath);
                 const writePath = path.join(CURR_DIR, projectName, file);
                 fs.writeFileSync(writePath, contents);
             }

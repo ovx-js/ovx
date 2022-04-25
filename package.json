@@ -1,11 +1,16 @@
 {
   "name": "ovx",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Orangii's Vue Example, used to quickly generate a template with vus-ts + vue-router + Element Plus with auto importation.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "ts-node src/index.ts",
-    "build": "tsc && shx rm -rf dist/templates && shx cp -r src/templates dist"
+    "dryrun": "ts-node src/index.ts",
+    "test": "ovx",
+    "pretest": "npm link",
+    "posttest": "npm unlink ovx",
+    "build": "tsc && shx rm -rf dist/templates && shx cp -r src/templates dist",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
   },
   "bin": {
     "ovx": "./dist/index.js"
@@ -27,6 +32,9 @@
     "@types/inquirer": "^8.2.1",
     "@types/node": "^17.0.26",
     "@types/shelljs": "^0.8.11",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint": "^8.14.0",
     "nodemon": "^2.0.15",
     "shx": "^0.3.4",
     "ts-node": "^10.7.0",
