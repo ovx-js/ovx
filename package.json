@@ -20,10 +20,7 @@
     "email": "me@orangii.cn",
     "url": "https://orangii.cn"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Jiaocz/ovx"
-  },
+  "repository": "git://github.com/Jiaocz/ovx.git",
   "license": "MIT",
   "devDependencies": {
     "@types/ejs": "^3.1.0",
