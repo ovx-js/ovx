@@ -15,7 +15,15 @@
     "Template",
     "ElementPlus"
   ],
-  "author": "Orangii|橙梓",
+  "author": {
+    "name": "Orangii|橙梓",
+    "email": "me@orangii.cn",
+    "url": "https://orangii.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jiaocz/ovx"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/ejs": "^3.1.0",
