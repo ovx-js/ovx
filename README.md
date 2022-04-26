@@ -1,5 +1,5 @@
 # OVX 🍊 [![Build Test](https://github.com/Jiaocz/ovx/actions/workflows/build-test.yml/badge.svg)](https://github.com/Jiaocz/ovx/actions/workflows/build-test.yml)
-<u>O</u>rangii <u>V</u>ue E<u>x</u>ample
+O̲rangii V̲ue Ex̲ample
 一个可以帮助生成Vue模板的Cli工具
 
 ## 介绍
@@ -18,6 +18,6 @@ npx ovx@latest
 
 ### npm global
 ```shell
-npm i ovx -g
+npm i ovx@latest -g
 ovx
 ```

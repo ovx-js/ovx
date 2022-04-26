@@ -1,0 +1,42 @@
+name: Publish Package to registry
+on:
+  release:
+    types: [created]
+
+jobs:
+  npmjs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org/'
+      - run: |
+        npm install
+        npm ci
+        npm run build
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_PUBLISH_TOKEN }}
+
+  github-pkg:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@Jiaocz'
+      - run: |
+        node .github/workflows/changePackageName.js
+        npm install
+        npm ci
+        npm run build
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGE_PUBLISH_TOKEN }}
