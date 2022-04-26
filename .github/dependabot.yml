@@ -11,6 +11,9 @@ updates:
       interval: "daily"
     reviewers:
       - "Jiaocz"
+    labels:
+      - "cli"
+      - "dependencies"
  
   - package-ecosystem: "npm"
     directory: "/src/templates/vue-ts-element-plus"
@@ -18,3 +21,6 @@ updates:
       interval: "daily"
     reviewers:
       - "Jiaocz"
+    labels:
+      - "templates"
+      - "dependencies"
