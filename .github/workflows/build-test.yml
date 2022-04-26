@@ -23,6 +23,7 @@ jobs:
   
   build-template:
     name: Build Template Test
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         template-path: ['vue-ts-element-plus']
