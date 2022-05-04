@@ -39,7 +39,6 @@ module.exports = {
     'no-trailing-spaces': ['error', {
       'ignoreComments': true,
     }],
-    'prefer-destructuring': ['error'],
     'eol-last': ['error', 'always'],
     'indent': [
       'error',
