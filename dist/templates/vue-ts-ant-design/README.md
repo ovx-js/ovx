@@ -6,6 +6,7 @@ This template should help get you started developing with Vue 3 and TypeScript i
 - [Vue 3](https://vuejs.org/)
 - [vue-router](https://router.vuejs.org/)
 - [Ant Design Vue](https://antdv.com/components/overview)
+- [vite](https://vitejs.org/)
 ---
 Note: Ant Design Icon is also supported in auto importation.
 

@@ -36,7 +36,6 @@ jobs:
       - run: |
           node .github/workflows/changePackageName.js
           npm install
-          npm ci
           npm run build
       - run: npm publish --registry=https://npm.pkg.github.com
         env:

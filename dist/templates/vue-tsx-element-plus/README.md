@@ -8,7 +8,7 @@ This template should help get you started developing with Vue 3 and TSX in Vite.
 - [Element Plus](https://element-plus.org/)
 - [Vue3 styled components](https://github.com/UX-and-I/vue3-styled-components)
 - [vite](https://vitejs.org/)
-
+---
 Though TSX is used in this template, you can still use `SFC` in `.vue` files.
 
 Use `vuetsc` for faster generation for `defineComponent` block.
