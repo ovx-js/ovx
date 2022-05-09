@@ -7,6 +7,7 @@ O̲rangii V̲ue Ex̲ample
 
 当前模板有：
 - Vue-ts + vue-router + Element Plus + Element Icon + 组件、方法自动导入
+- Vue-tsx + vue-router + Element Plus + Element Icon
 - Vue-ts + vue-router + Ant Design + Element Icon + 组件、方法自动导入
 
 _更多模板添加中_
