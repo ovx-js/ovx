@@ -5,6 +5,7 @@ on:
 
 jobs:
   npmjs:
+    name: Publish to NPMJS
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -14,13 +15,13 @@ jobs:
           registry-url: 'https://registry.npmjs.org/'
       - run: |
           npm install
-          npm ci
           npm run build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_PUBLISH_TOKEN }}
 
   github-pkg:
+    name: Publish to GitHub PKG
     runs-on: ubuntu-latest
     permissions:
       contents: read
