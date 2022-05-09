@@ -34,3 +34,13 @@ updates:
     labels:
       - "templates"
       - "dependencies"
+
+  - package-ecosystem: "npm"
+    directory: "/src/templates/vue-tsx-element-plus"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "Jiaocz"
+    labels:
+      - "templates"
+      - "dependencies"

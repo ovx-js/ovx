@@ -1,7 +1,7 @@
 {
   "name": "ovx",
-  "version": "2.0.3",
-  "description": "Orangii's Vue Example, used to quickly generate a template with vus-ts + vue-router + Element Plus/Ant Design with auto importation.",
+  "version": "2.1.3",
+  "description": "Orangii's Vue Example, used to quickly generate a template with vus-ts + vue-router + Element Plus/Ant Design.",
   "main": "dist/index.js",
   "scripts": {
     "dryrun": "ts-node src/index.ts",
@@ -20,7 +20,9 @@
     "Template",
     "ElementPlus",
     "AntDesign",
-    "CLI"
+    "CLI",
+    "TypeScript",
+    "Vue-tsx"
   ],
   "author": {
     "name": "Orangii|橙梓",
@@ -43,6 +45,7 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "chalk": "4.1.2",
     "ejs": "^3.1.7",
     "inquirer": "^8.2.2",
     "shelljs": "^0.8.5"

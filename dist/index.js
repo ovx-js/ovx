@@ -39,7 +39,7 @@ const QUESTIONS = [
     {
         name: 'template',
         type: 'list',
-        message: 'Which template do you want to use? (other templates are coming soon)',
+        message: 'Which template do you want to use? ' + chalk_1.default.gray('(More templates coming soon)'),
         choices: template_list_1.templateList,
     },
     {

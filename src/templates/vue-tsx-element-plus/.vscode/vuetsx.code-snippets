@@ -1,0 +1,14 @@
+{
+  "Print to Console": {
+    "prefix": "vuetsx",
+    "body": [
+      "import { defineComponent } from 'vue'\n",
+      "export default defineComponent({",
+      "  setup (props, context) {",
+      "    return () => <>${0}</>;",
+      "  }",
+      "});\n"
+    ],
+    "description": "Create Vue tsx template"
+  }
+}

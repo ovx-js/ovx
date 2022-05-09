@@ -26,14 +26,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        template-path: ['vue-ts-element-plus', 'vue-ts-ant-design']
+        template-path: ['vue-ts-element-plus', 'vue-ts-ant-design', 'vue-tsx-element-plus']
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: 16
       - name: CD directory
-        run: cd src/templates/${{ matrix.template-path }}
+        run: cd dist/templates/${{ matrix.template-path }}
       - name: Build Test
         run: |
           npm install

@@ -5,7 +5,8 @@ This template should help get you started developing with Vue 3 and TypeScript i
 ## All Docuements
 - [Vue 3](https://vuejs.org/)
 - [vue-router](https://router.vuejs.org/)
-- [Element Plus](https://element-plus.gitee.io/)
+- [Element Plus](https://element-plus.org/)
+- [vite](https://vitejs.org/)
 ---
 Note: use Element Plus icon by `<el-icon><ep-orange /></el-icon>` instead of `<el-icon><orange /></el-icon>` because we are using @iconify/ep for auto icon importing.
 

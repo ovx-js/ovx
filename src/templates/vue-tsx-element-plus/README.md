@@ -1,20 +1,20 @@
-# Vue 3 + TypeScript + Ant Design Vue + Vite
+# Vue 3 + TypeScript + Vite + Element Plus + TSX support
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This template should help get you started developing with Vue 3 and TSX in Vite. The template uses Render function, check out the [Render Functions & JSX](https://vuejs.org/guide/extras/render-function.html) to learn more.
 
-## All Documents
-- [Vue 3](https://vuejs.org/)
-- [vue-router](https://router.vuejs.org/)
-- [Ant Design Vue](https://antdv.com/components/overview)
+## All Document
+- [Vue.js](https://vuejs.org/)
+- [Vue router](https://router.vuejs.org/)
+- [Element Plus](https://element-plus.org/)
+- [Vue3 styled components](https://github.com/UX-and-I/vue3-styled-components)
 - [vite](https://vitejs.org/)
 ---
-Note: Ant Design Icon is also supported in auto importation.
+Though TSX is used in this template, you can still use `SFC` in `.vue` files.
 
-Auto-importations:
-- [unplug-auto-import](https://github.com/antfu/unplugin-auto-import)
-- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
+Use `vuetsc` for faster generation for `defineComponent` block.
 
 ## Recommended IDE Setup
+
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
 ## Type Support For `.vue` Imports in TS
