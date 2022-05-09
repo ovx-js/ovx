@@ -1,6 +1,6 @@
 {
   "name": "ovx",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Orangii's Vue Example, used to quickly generate a template with vus-ts + vue-router + Element Plus/Ant Design with auto importation.",
   "main": "dist/index.js",
   "scripts": {

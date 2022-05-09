@@ -4,3 +4,5 @@ node_modules
 !/dist/templates/**/src
 .eslintrc.js
 tsconfig.json
+!/dist/templates/**/tsconfig.json
+!/dist/templates/**/*
