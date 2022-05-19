@@ -22,7 +22,7 @@ jobs:
         run: npm run build
   
   build-template:
-    name: Build Template Test
+    name: "[Template] Build Test"
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: 16
       - name: Build Test
-        working-directory: ./dist/templates/${{ matrix.template-path }}
+        working-directory: ./src/templates/${{ matrix.template-path }}
         run: |
           npm install
           npm run build
