@@ -30,6 +30,7 @@
     "url": "https://orangii.cn"
   },
   "repository": "git://github.com/Jiaocz/ovx.git",
+  "homepage": "https://ovx.js.cn/",
   "license": "MIT",
   "devDependencies": {
     "@types/ejs": "^3.1.0",
