@@ -1,6 +1,6 @@
 {
   "name": "ovx",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "Orangii's Vue Example, used to quickly generate a template with vus-ts + vue-router + Element Plus/Ant Design.",
   "main": "dist/index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "email": "me@orangii.cn",
     "url": "https://orangii.cn"
   },
-  "repository": "git://github.com/Jiaocz/ovx.git",
+  "repository": "git://github.com/ovx-js/ovx.git",
   "homepage": "https://ovx.js.cn/",
   "license": "MIT",
   "devDependencies": {
