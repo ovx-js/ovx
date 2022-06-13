@@ -27,6 +27,6 @@
     "typescript": "^4.5.4",
     "unplugin-element-plus": "^0.4.0",
     "vite": "^2.9.7",
-    "vue-tsc": "^0.34.7"
+    "vue-tsc": "^0.37.7"
   }
 }
