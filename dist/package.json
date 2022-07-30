@@ -1,0 +1,54 @@
+{
+    "name": "ovx",
+    "version": "2.1.7",
+    "description": "Orangii's Vue Example, used to quickly generate a template with vus-ts + vue-router + Element Plus/Ant Design.",
+    "main": "dist/index.js",
+    "scripts": {
+        "dryrun": "ts-node src/index.ts",
+        "test": "ovx",
+        "pretest": "npm link",
+        "posttest": "npm unlink ovx",
+        "build": "tsc && shx rm -rf dist/templates && shx cp -r src/templates dist",
+        "lint": "eslint src",
+        "lint:fix": "eslint src --fix"
+    },
+    "bin": {
+        "ovx": "./dist/index.js"
+    },
+    "keywords": [
+        "Vue",
+        "Template",
+        "ElementPlus",
+        "AntDesign",
+        "CLI",
+        "TypeScript",
+        "Vue-tsx"
+    ],
+    "author": {
+        "name": "Orangii|橙梓",
+        "email": "me@orangii.cn",
+        "url": "https://orangii.cn"
+    },
+    "repository": "git://github.com/ovx-js/ovx.git",
+    "homepage": "https://ovx.js.cn/",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/ejs": "^3.1.0",
+        "@types/inquirer": "^8.2.1",
+        "@types/node": "^18.0.0",
+        "@types/shelljs": "^0.8.11",
+        "@typescript-eslint/eslint-plugin": "^5.21.0",
+        "@typescript-eslint/parser": "^5.21.0",
+        "eslint": "^8.14.0",
+        "nodemon": "^2.0.15",
+        "shx": "^0.3.4",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.3"
+    },
+    "dependencies": {
+        "chalk": "4.1.2",
+        "ejs": "^3.1.7",
+        "inquirer": "^9.0.2",
+        "shelljs": "^0.8.5"
+    }
+}
